@@ -1,0 +1,48 @@
+.Packs {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.Packs h2 {
+  font-size: 1.5rem;
+  color: #4a635d;
+  margin-bottom: 1rem;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.Packs .intro-text {
+  font-size: 1.05rem;
+  color: #444;
+  width: 80%;
+  font-family: 'Gowun Dodum', sans-serif;
+
+  justify-self: center;
+
+}
+.Packs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.packs-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+}
+
+.packs-image-container {
+  width: 92%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+
+}
+
+.packs-image {
+  width: 100%;
+  object-fit: cover;
+}
+

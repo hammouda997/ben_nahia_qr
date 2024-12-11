@@ -1,0 +1,135 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: rgb(47, 28, 28);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  height: 7vh;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;  
+}
+
+.navbar-logo {
+  width: auto;
+  height: 10vh;
+  margin-top: -2%;
+}
+
+/* Link Styling */
+.navbar-left a,
+.navbar-right a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+  color: black; /* Accent color */
+}
+
+/* Mobile Toggle Button */
+.navbar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+ 
+font-size: 20px;
+  color: #ffdfdf;
+
+}
+
+
+
+/* Mobile Menu Styling */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.mobile-menu a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-left,
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+.language-switch {
+  position: relative;
+  display: inline-block;
+  color: #ffdfdf;
+}
+
+.language-menu {
+  position: absolute;
+margin-left: -20%; 
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.language-menu button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.language-menu button:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Florida Vibes';
+    src: url('FloridaVibes.eot');
+    src: local('FloridaVibes'),
+        url('FloridaVibes.eot?#iefix') format('embedded-opentype'),
+        url('FloridaVibes.woff2') format('woff2'),
+        url('FloridaVibes.woff') format('woff'),
+        url('FloridaVibes.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

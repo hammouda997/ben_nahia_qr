@@ -1,0 +1,51 @@
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: relative;
+    border-radius: 1%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-family: FLORIDAVIBES;
+
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white ;
+        font-family: Playfair Display, serif;
+
+  }
+  
+  .hero button {
+    background-color: #ffdfdf;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: rgb(35, 34, 34);
+  }
+  
