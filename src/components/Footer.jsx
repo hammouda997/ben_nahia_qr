@@ -9,10 +9,11 @@ const Footer = () => {
       <div className="footer-content">
         <p>&copy; 2024 Centre Ben Nahia</p>
         <p>
-        <FontAwesomeIcon icon={faWhatsapp} style={{ marginLeft: "8px" , color :"#25d366" ,     marginRight:"2%" , fontSize: "18px" }} /> {/* WhatsApp icon */}
+        <FontAwesomeIcon             href="https://wa.me/+21697111206"
+ icon={faWhatsapp} style={{ marginLeft: "8px" , color :"#25d366" ,     marginRight:"2%" , fontSize: "18px" }} /> {/* WhatsApp icon */}
 
           <a
-            href="https://wa.me/97111206"
+            href="https://wa.me/+21697111206"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-link"

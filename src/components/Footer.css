@@ -1,30 +1,36 @@
 .footer {
-    background-color: rgb(47, 28, 28);
-        color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    
-  }
-  
-  .footer-content p {
-    color: white;
-    margin: 5px 0;
-    font-size: 14px;
-    font-family: "Gowun Dodum", sans-serif;
+  background-color: rgb(47, 28, 28);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
-  
-  .whatsapp-link {
-    color: white; /* WhatsApp green color */
-    text-decoration: none;
-    font-weight: bolder;
-    font-family: "Gowun Dodum", sans-serif;
-font-size: small;
-font-size: 15px;
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+}
 
-  }
-  
-  .whatsapp-link:hover {
-    text-decoration: underline;
-  }
-  
+.footer-content p {
+  color: white;
+  margin: 5px 0;
+  font-size: 14px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.whatsapp-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 15px;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}

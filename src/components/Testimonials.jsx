@@ -90,54 +90,71 @@ const FeedbackSection = () => {
         </Swiper>
       </div>
 
-      <div className="feedback-container" style={{ padding: '2rem', textAlign: 'center' }}>
-        <h3 style={{ fontSize: '1.8rem', color: '#4a635d', marginBottom: '1rem', fontFamily: "'Gowun Dodum', sans-serif" }}>
-          {t.opinionCounts}
-        </h3>
-        <form onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: '0 auto' }}>
-          <input
-            type="text"
-            placeholder={t.placeholderName}
-            value={feedback.name}
-            onChange={(e) => setFeedback({ ...feedback, name: e.target.value })}
-            style={{
-              width: '100%',
-              padding: '0.8rem',
-              marginBottom: '1rem',
-              border: '1px solid #ccc',
-              borderRadius: '5px',
-            }}
-          />
-          <textarea
-            placeholder={t.placeholderReview}
-            value={feedback.review}
-            onChange={(e) => setFeedback({ ...feedback, review: e.target.value })}
-            style={{
-              width: '100%',
-              padding: '0.8rem',
-              marginBottom: '1rem',
-              border: '1px solid #ccc',
-              borderRadius: '5px',
-              resize: 'none',
-            }}
-            rows="4"
-          ></textarea>
-          <button
-            type="submit"
-            style={{
-              padding: '0.8rem 1.5rem',
-              backgroundColor: '#ffdfdf',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer',
-              fontSize: '1rem',
-              color: "black"
-            }}
-          >
-            {t.submitButton}
-          </button>
-        </form>
-      </div>
+      <div className="feedback-container">
+  <h3
+    style={{
+      fontSize: '1.8rem',
+      color: '#4a635d',
+      marginBottom: '1rem',
+      fontFamily: "'Gowun Dodum', sans-serif",
+    }}
+  >
+    {t.opinionCounts}
+  </h3>
+  <form
+    onSubmit={handleSubmit}
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      maxWidth: '400px',
+      width: '100%',
+    }}
+  >
+    <input
+      type="text"
+      placeholder={t.placeholderName}
+      value={feedback.name}
+      onChange={(e) => setFeedback({ ...feedback, name: e.target.value })}
+      style={{
+        width: '100%',
+        padding: '0.8rem',
+        marginBottom: '1rem',
+        border: '1px solid #ccc',
+        borderRadius: '5px',
+      }}
+    />
+    <textarea
+      placeholder={t.placeholderReview}
+      value={feedback.review}
+      onChange={(e) => setFeedback({ ...feedback, review: e.target.value })}
+      style={{
+        width: '100%',
+        padding: '0.8rem',
+        marginBottom: '1rem',
+        border: '1px solid #ccc',
+        borderRadius: '5px',
+        resize: 'none',
+      }}
+      rows="4"
+    ></textarea>
+    <button
+      type="submit"
+      style={{
+        padding: '0.8rem 1.5rem',
+        backgroundColor: '#ffdfdf',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+        fontSize: '1rem',
+        color: 'black',
+      }}
+    >
+      {t.submitButton}
+    </button>
+  </form>
+</div>
+
     </div>
   );
 };

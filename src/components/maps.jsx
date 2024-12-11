@@ -18,17 +18,29 @@ const Maps = () => {
 
   return (
     <>
-      <p
-        style={{
-          fontSize: "1.7rem",
-          color: "#4a635d",
-          marginBottom: "1rem",
-          fontFamily: "'Gowun Dodum', sans-serif",
-          textAlign: "center",
-        }}
-      >
-        {t.title}
-      </p>
+ <div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    height: '100px', // Define height for alignment
+    border: '1px solid red', // Debugging border
+  }}
+>
+  <p
+    style={{
+      fontSize: "1.7rem",
+      color: "#4a635d",
+      margin: 0, // Reset any inherited margins
+      fontFamily: "'Gowun Dodum', sans-serif",
+    }}
+  >
+    {t.title}
+  </p>
+</div>
+
+
       <div
         style={{
           width: '100%',
